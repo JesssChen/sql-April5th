@@ -16,3 +16,9 @@
 -- | 2004 | St. Louis Cardinals           | 105       |
 
 
+SELECT year, name, MAX(wins) FROM teams
+where year>=1960
+GROUP BY year
+ORDER BY MAX(wins) DESC;
+
+`cannot directly add name after the SELECT as the GROUP BY is not by name

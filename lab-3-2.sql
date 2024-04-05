@@ -40,3 +40,9 @@
 -- +-------------------------------+------------------+
 
 
+SELECT name, AVG(wins) FROM teams 
+WHERE year>2000
+GROUP BY name;
+
+'not include the year 2000 in the 21 century
+
